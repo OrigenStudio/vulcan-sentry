@@ -1,20 +1,20 @@
 Package.describe({
-  name: 'origen:vulcan-sentry',
-  version: '0.0.1',
+  name: "origenstudio:vulcan-sentry",
+  version: "0.0.1",
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: "Sentry integration for VulcanJS",
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: "https://github.com/OrigenStudio/vulcan-sentry",
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md',
+  documentation: "README.md"
 });
 
 Package.onUse(api => {
-  api.versionsFrom('1.6.0.1');
+  api.versionsFrom("1.6.0.1");
 
-  api.use(['vulcan:core@1.8.11', 'vulcan:events@1.8.11']);
+  api.use(["vulcan:core@1.8.11", "vulcan:events@1.8.11"]);
 
-  api.mainModule('lib/server/main.js', 'server');
-  api.mainModule('lib/client/main.js', 'client');
+  api.mainModule("lib/server/main.js", "server");
+  api.mainModule("lib/client/main.js", "client");
 });
