@@ -12,13 +12,13 @@ meteor add origenstudio:vulcan-sentry
 
 In your app settings.json file add:
 
-``` json
+```
 {
     //...
-    public: {
+    "public": {
         //...
-        sentry: {
-            DSN: YOUR_SENTRY_DSN_CODE
+        "sentry": {
+            "DSN": "YOUR_SENTRY_DSN_CODE"
         }
     }
 }
